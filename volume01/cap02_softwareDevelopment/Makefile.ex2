@@ -1,0 +1,26 @@
+# Makefile for building multiple executables
+# Authorized by Mr. Jin-Jwei Chen.
+# Copyright (c) 1991, 2012-2016, 2020 Mr. Jin-Jwei Chen. All rights reserved.
+#
+
+PROGS = prog1 prog2
+OBJS = prog1.o prog2.o
+
+CFLAGS = -c
+CC = cc
+LD = cc
+LDLIBS = -lpthread
+MYLIBS = mylib.o
+
+all: $(MYLIBS) $(PROGS)
+
+# This rule builds each executable target, single or multiple
+$(PROGS) : $(OBJS) mylib.c
+	$(CC) -o $@ $(@).o $(MYLIBS) $(LDLIBS)
+
+# This rule builds *.o from *.c.
+.c.o:
+	$(CC) $(CFLAGS) $<
+
+clean:
+	rm -rf $(PROGS) $(OBJS) $(MYLIBS)
