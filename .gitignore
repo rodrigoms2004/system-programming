@@ -1,1 +1,14 @@
+# ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 *.o
+*.a
+
+!Makefile*
+!makefile*
