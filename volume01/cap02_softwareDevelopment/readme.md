@@ -55,3 +55,7 @@ cc -c prog1.c -o prog1.o
 cc  -o prog1 prog1.o ../lib/mylib.a
 make[1]: Leaving directory '/home/eseye/system-programming/volume01/cap02_softwareDevelopment/simpleProject/prog1'
 ```
+
+## References
+
+* [Unix Makefile Tutorial](https://www.tutorialspoint.com/makefile/index.htm)
