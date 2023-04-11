@@ -1,0 +1,7 @@
+#! /myproj/lib/libtst1/libtst1.so
+*
+* Above is the full pathname to the shared library object file
+* Below is the list of symbols to be exported in the library:
+*
+tripleIt
+echoMsg

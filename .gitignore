@@ -9,6 +9,9 @@
 
 *.o
 *.a
+*.so
+
+uselink-uselink*
 
 !Makefile*
 !makefile*
