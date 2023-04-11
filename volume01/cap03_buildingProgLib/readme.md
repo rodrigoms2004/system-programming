@@ -188,3 +188,28 @@ or
 ```
 gcc -dynamic -o uselink uselink.c ../../libtst1/libtst1.so
 ```
+
+## Develop and build an application that dynamically loads your own library
+
+volume01/cap03_buildingProgLib/src/app/dload
+
+### Linux
+
+```
+cc -c -fPIC -g useload.c -o useload.o
+cc -dynamic -o useload useload.o -lc -ldl
+```
+
+or 
+
+```
+gcc -c useload.c
+gcc -rdynamic -o useload useload.o -ldl
+```
+
+### Run it
+
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/eseye/system-programming/volume01/cap03_buildingProgLib/src/libtst1
+./useload
+```
