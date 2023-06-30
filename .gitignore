@@ -17,4 +17,4 @@ uselink-uselink*
 !makefile*
 
 # volume01/cap04_fileIO/src/gendataf.c
-gendataf.txt
+gendataf*.txt
