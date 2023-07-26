@@ -25,7 +25,7 @@ LDLIBS = -lnsl -lpthread -lrt
 #endif
 
 # Programs to be built
-PROGS=gendataf read copy writer reader randomwr readv writev
+PROGS=gendataf read copy writer reader randomwr readv writev aioread aiowrite
 
 # Generic build rules.
 # This rule builds each executable target, single or multiple.
