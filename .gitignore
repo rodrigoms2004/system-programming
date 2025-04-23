@@ -1,3 +1,25 @@
+# ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 *.o
-vol2srcupd_tar
+*.a
+*.so
+
+uselink-uselink*
+
+!Makefile*
+!makefile*
+
+# volume01/cap04_fileIO/src/gendataf.c
+gendataf*.txt
+
 vol1srcupd20220616
+vol2srcupd_tar
+
+!system-programming.zip
