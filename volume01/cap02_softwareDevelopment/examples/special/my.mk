@@ -1,0 +1,1 @@
+MACRO1 = from my.mk

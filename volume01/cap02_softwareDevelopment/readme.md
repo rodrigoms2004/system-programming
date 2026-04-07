@@ -5,6 +5,23 @@ $< name of the file causing the action, e.g. mylib.o
 $@ name of the current target
 ```
 
+
+## Compiling modes
+
+For debug
+
+```
+cc -g myprog.c
+```
+
+For production
+
+```
+cc -O2 myprog.c
+```
+
+
+
 ## Make from volume01/cap02_softwareDevelopment/Makefile
 
 

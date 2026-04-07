@@ -27,3 +27,12 @@ prog2: prog2.o $(MYLIBS)
 clean:
 	rm -fr prog1 prog1.o prog2 prog2.o $(MYLIBS)
 
+
+
+# Results:
+# cc -c prog1.c
+# cc -c mylib.c
+# cc -o prog1 prog1.o mylib.o -lpthread
+# cc -c prog2.c
+# cc -o prog2 prog2.o mylib.o -lpthread
+
